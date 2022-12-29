@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neurographic Art</title>
+    <style>
+      body {
+        background: darkgray;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      h1 {
+        color: #0b8491;
+        text-align: center;
+        font-weight: bold;
+        border: 1px solid #eae1e2;
+        padding: 20px;
+        border-radius: 10px;
+      }
+      h2 {
+        color: #0b8491;
+        text-align: center;
+      }
+      p {
+        color: #eae1e2;
+        text-align: justify;
+        padding: 5px 24px;
+        line-height: 1.5;
+      }
+      img {
+        border-radius: 10px;
+      }
+      button {
+        background: #eae1e2;
+        font-weight: bold;
+        font-size: 16px;
+        border-radius: 10px;
+        padding: 15px 20px;
+        box-shadow: 0 1px 20px rgb(0 0 0 / 50%);
+        transition: all 200 ms ease-in-out;
+      }
+      button:hover {
+        background: #0c2349;
+        color: #eae1e2;
+        cursor: pointer;
+      }
+      a {
+        color: #0c2349;
+        display: block;
+        text-align: left;
+        padding: 5px 24px;
+        font-weight: bold;
+      }
+      a:visited {
+        color: #704561;
+      }
+      .wholebody {
+        background: linear-gradient(
+          180deg,
+          rgb(0, 0, 0) 11.2%,
+          rgb(11, 132, 145) 91.1%
+        );
+        border-radius: 10px;
+        margin: 25px;
+        padding: 40px;
+        text-align: center;
+        max-width: 750px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wholebody">
+      <h1>NEUROGRAPHICS</h1>
+      <h2>Art for better life</h2>
+      <p>
+        <strong>Neurographics</strong>
+        is a way of drawing that recreates the outer from the inner. The world
+        is a reflection of the beliefs we hold. Beliefs are arbitrary limits on
+        what is possible, and therefore frame the limited way in which the world
+        is experienced.
+      </p>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/060/441/original/neuro_cropped.jpg?1672148784"
+        alt="Neurographic picture"
+      />
+      <p>
+        Neurographics was discovered and developed in 2015 by Pavel Piskarev, a
+        Russian psychologist and creativity entrepreneur.
+      </p>
+      <p>
+        The results can range from
+        <em>immediate insights and revelations to changes in your life </em>
+        that take place in the most unusual and creative of ways. Since you are
+        working with the unconscious, you may surprise yourself days later with
+        a solution that comes seemingly out of nowhere.
+      </p>
+
+      <a
+        href="https://neurographic.art/2019/02/25/what-is-neurographics/"
+        target="_blank"
+        >Learn more about the method</a
+      >
+      <hr />
+      <p>
+        If you are interested in transforming your life with Neurographics,
+        please let me know. I am a certified Neurographics teacher and look
+        forward to sharing this groundbreaking method with you.
+      </p>
+      <button>Join a free class</button>
+    </div>
+    <script>
+      function canApply() {
+        let name = prompt("What is your name?");
+        let answer = prompt(
+          "Would you like to join a free class tomorrow at 2pm (GMT+2?)"
+        );
+        let result = answer.toLowerCase();
+        let email = prompt("What is your email?");
+        if (result === "yes") {
+          alert(
+            "Great, " +
+              name +
+              "! Check your email " +
+              email +
+              " for more details . See you soon!"
+          );
+        } else {
+          alert(
+            "Thanks, " +
+              name +
+              "! I'll let you know about other dates available. Check your email " +
+              email +
+              " . Have a nice day!"
+          );
+        }
+      }
+      let button = document.querySelector("button");
+      button.addEventListener("click", canApply);
+    </script>
+  </body>
+</html>
